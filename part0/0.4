@@ -1,0 +1,8 @@
+sequenceDiagram
+
+browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+browser ->>server: push req.body.note and new Date() into notes
+server ->> browser: GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+[![](https://mermaid.ink/img/pako:eNqVUcFOwzAM_ZUoJ5BGy1roth522sQJgTSOkZDbuG1Em3SJszFN_XfSbVRcuUTOs9_zs33mpZHIc-5w71GXuFFQW-iEFrqw5ujQPqzX4T2gzdn72-6DNUS9y-PYkZcKXVS6qMHWKf2lokrF-A1d3yL0fazx-KkN4STF_mj13jXM4j4qjDxFYxkDLVngsA0Q3t0zpcmwMeGEvrJGPrtp5exl-y8zoxCf8Q5tB0qGkc9CMyY4Ndih4HkIJVbgWxJc6CGUgiezO-mS52Q9zrjvZXB22xDPK2jdhG6lImMnsDUgMXzPnE79uN9aOQqSpdGVqkfc2zbAv_7HdFQranwRlaaLnZINWGoOqyzOkmwJSYrZIoXnNJVlMV8tq-RpXsnF4zwBPgwzjpf-r9djXm46_AADcqX-?type=png)]
+(https://mermaid.live/edit#pako:eNqVUcFOwzAM_ZUoJ5BGy1roth522sQJgTSOkZDbuG1Em3SJszFN_XfSbVRcuUTOs9_zs33mpZHIc-5w71GXuFFQW-iEFrqw5ujQPqzX4T2gzdn72-6DNUS9y-PYkZcKXVS6qMHWKf2lokrF-A1d3yL0fazx-KkN4STF_mj13jXM4j4qjDxFYxkDLVngsA0Q3t0zpcmwMeGEvrJGPrtp5exl-y8zoxCf8Q5tB0qGkc9CMyY4Ndih4HkIJVbgWxJc6CGUgiezO-mS52Q9zrjvZXB22xDPK2jdhG6lImMnsDUgMXzPnE79uN9aOQqSpdGVqkfc2zbAv_7HdFQranwRlaaLnZINWGoOqyzOkmwJSYrZIoXnNJVlMV8tq-RpXsnF4zwBPgwzjpf-r9djXm46_AADcqX-)
